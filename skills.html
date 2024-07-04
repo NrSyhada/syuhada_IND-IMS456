@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills- My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <header>
+        <h1>Skills & Languages</h1>
+        <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="education.html">Education</a></li>
+              <li><a href="skills.html">Skills & Languages</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+    </header>
+    <section>
+        <div class="skills-container">
+            <h2 class="skills-header">SKILLS</h2>
+            <div class="skill-buttons">
+                <button class="skill-button" onclick="showContent('Fade')">MICROSOFT WORD</button>
+                <button class="skill-button" onclick="showContent('Left')">MICROSOFT EXCEL</button>
+                <button class="skill-button" onclick="showContent('Right')">POWERPOINT</button>
+                <button class="skill-button" onclick="showContent('Top')">CANVA</button>
+                <button class="skill-button" onclick="showContent('Bottom')">ADOBE PHOTOSHOP</button>
+                <button class="skill-button" onclick="showContent('Zoom')">CAPCUT</button>
+            </div>
+        </div>
+        
+        <div id="Fade" class="content-container w3-animate-opacity">
+            <h2>EXPERT</h2>
+            <p>My expertise in Microsoft Word is about 90% where I can create and format professional documents, perform advanced editing, and utilize various templates.</p>
+        </div>
+        
+        <div id="Left" class="content-container w3-animate-left">
+            <h2>MODERATE</h2>
+            <p>My expertise in Microsoft Excel is about 70%, including creating and formatting spreadsheets, performing basic data analysis with functions and formulas, and generating charts and graphs. I'm also familiar with using pivot tables for data organization.</p>
+        </div>
+        
+        <div id="Right" class="content-container w3-animate-right">
+            <h2>EXPERT</h2>
+            <p>My expertise in Microsoft PowerPoint is about 90%, where I am skilled at designing engaging presentations, incorporating multimedia elements, and using advanced features like animations and transitions.</p>
+        </div>
+        
+        <div id="Top" class="content-container w3-animate-top">
+            <h2>EXPERT</h2>
+            <p>My expertise in Canva is about 90%, and I am experienced in using Canva to design visually appealing graphics, social media posts, and marketing materials with a wide range of customizable templates and tools.</p>
+        </div>
+        
+        <div id="Bottom" class="content-container w3-animate-bottom">
+            <h2>MODERATE</h2>
+            <p>My expertise in Adobe Photoshop is about 70%, including photo editing, basic retouching, working with layers, and applying various effects and filters. I'm also familiar with using tools for creating and enhancing graphics.</p>
+        </div>
+        
+        <div id="Zoom" class="content-container w3-animate-zoom">
+            <h2>EXPERT</h2>
+            <p>My expertise in CapCut is about 80%, where I can edit videos with precision, apply effects and filters, and create compelling video content.</p>
+        </div>
+        
+        <script>
+        function showContent(contentId) {
+            var contents = document.getElementsByClassName('content-container');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
+            }
+            document.getElementById(contentId).style.display = 'block';
+        }
+        </script>
+
+<div class="container">
+    <h2>LANGUAGE EXPERTATION</h2>
+    <ul class="language-list">
+      <li>MALAY <span class="language-level">FLUENT</span></li>
+      <li>ENGLISH <span class="language-level">INTERMEDIATE</span></li>
+    </ul>
+  </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 [syuhadabalqis]. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
